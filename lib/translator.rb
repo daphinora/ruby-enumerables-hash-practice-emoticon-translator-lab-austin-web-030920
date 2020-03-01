@@ -11,13 +11,13 @@ def load_library(path)
 end
 
 
-def get_japanese_emoticon(path, emoticons)
+def get_japanese_emoticon(path, emoticon)
   emoticons_meaning = load_library(path)
-  translator = emoticons_meaning["get_meaning"][]
+  translator = emoticons_meaning["get_meaning"][emoticon]
 end
 
 
-def get_english_meaning(path, emoticons)
+def get_english_meaning(path, emoticon)
   # code goes here
 end
 
