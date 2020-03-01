@@ -6,8 +6,6 @@ def load_library(path)
   emoticons.each do |meaning, emoticon|
     emoticons_meaning["get_emoticon"][emoticon.first] = emoticon.last
     emoticons_meaning["get_meaning"][emoticon.last] = meaning
-    
-    
   end
   pp emoticons_meaning
 end
