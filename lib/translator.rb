@@ -12,7 +12,7 @@ end
 
 
 def get_japanese_emoticon(path, emoticons)
-  # code goes here
+  emoticons_meaning = 
 end
 
 
