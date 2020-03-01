@@ -2,10 +2,9 @@ require 'yaml'
 
 def load_library(path)
   emoticons_meaning = {"get_meaning" => {}, "get_emoticon" => {}}
-  path.each do |meaning_key, emoticon_value|
+  emoticons.each do |meaning_key, emoticon_value|
     emoticons_meaning["get_meaning"][emoticon_value] = meaning_key
   end
-  return path
 end
 
 def get_japanese_emoticon(path, emoticons)
