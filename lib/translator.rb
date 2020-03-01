@@ -1,7 +1,7 @@
 require 'yaml'
 require 'pp'
 def load_library(path)
-  emoticons = 
+  emoticons = YAML.load
   emoticons_meaning = {"get_meaning" => {}, "get_emoticon" => {}}
   emoticons.each do |meaning_key, emoticon_value|
     emoticons_meaning["get_meaning"][emoticon_value] = meaning_key
