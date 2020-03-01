@@ -13,7 +13,7 @@ end
 
 def get_japanese_emoticon(path, emoticons)
   emoticons_meaning = load_library(path)
-  translator = 
+  translator = emoticons_meaning
 end
 
 
