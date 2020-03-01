@@ -5,7 +5,7 @@ def load_library(path)
   emoticons_meaning = {"get_meaning" => {}, "get_emoticon" => {}}
   emoticons.each do |meaning, emoticon|
     emoticons_meaning["get_emoticon"][emoticon.first]
-    emoticons_meaning["get_meaning"][emoticon.last] = meaning.first
+    emoticons_meaning["get_meaning"][emoticon.last] = meaning
     
     
   end
