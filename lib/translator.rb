@@ -1,7 +1,7 @@
 require 'yaml'
 require 'pp'
 def load_library(path)
-  #emoticons = YAML.load_file(path)
+  emoticons = YAML.load_file(path)
   emoticon_hash = Hash.new
 
   emoticon_hash["get_emoticon"] = Hash.new
