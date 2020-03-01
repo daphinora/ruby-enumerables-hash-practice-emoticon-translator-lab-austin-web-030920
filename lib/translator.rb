@@ -1,13 +1,24 @@
-# require modules here
+require 'yaml'
 
-def load_library
+def load_library(path)
+  emoticons_meaning = {"get_meaning" => {}, "get_emoticon" => {}}
+  path.each do |meaning_key, emoticon_value|
+    emoticons_meaning["get_meaning"][emoticon_value] = meaning_key
+  end
+  return path
+end
+
+def get_japanese_emoticon(path, emoticons)
   # code goes here
 end
 
-def get_japanese_emoticon
+def get_english_meaning(path, emoticons)
   # code goes here
 end
 
-def get_english_meaning
-  # code goes here
-end
+
+
+
+
+
+
